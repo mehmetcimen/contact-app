@@ -1,0 +1,17 @@
+D:\DevOps\projects\my\ContactApp\Service\bin\Debug\net6.0\Service.deps.json
+D:\DevOps\projects\my\ContactApp\Service\bin\Debug\net6.0\Service.dll
+D:\DevOps\projects\my\ContactApp\Service\bin\Debug\net6.0\Service.pdb
+D:\DevOps\projects\my\ContactApp\Service\bin\Debug\net6.0\Core.dll
+D:\DevOps\projects\my\ContactApp\Service\bin\Debug\net6.0\Repository.dll
+D:\DevOps\projects\my\ContactApp\Service\bin\Debug\net6.0\Repository.pdb
+D:\DevOps\projects\my\ContactApp\Service\bin\Debug\net6.0\Core.pdb
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\Service.csproj.CopyComplete
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\Service.dll
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\refint\Service.dll
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\Service.pdb
+D:\DevOps\projects\my\ContactApp\Service\obj\Debug\net6.0\ref\Service.dll
