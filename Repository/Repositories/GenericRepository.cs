@@ -39,7 +39,7 @@ namespace Repository.Repositories
             return _dbSet.AsNoTracking().AsQueryable();  //Note:: AsNoTracking: memory'e almaz verileri
         }
 
-        public async Task<T> GetByIdAync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
             return await _dbSet.FindAsync(id);
         }

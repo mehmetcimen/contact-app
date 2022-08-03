@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oQshr92s71JtIg5pkQ2Udw3tw8wAAre9/Rf5VPcTmRJkvDDCpniaFsfbRCMOWl71cnuFEQflMlW3WZmLIrCpRA==",
+  "dgSpecHash": "dz7roQ875YM8AM/p3+lPguXEeYTUkicCwJvIafZn2xLy/+dFp+oUFWAV75WcnGDLMhcBBHE8KDHEQ37WNKmxzg==",
   "success": true,
-  "projectFilePath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Core\\Core.csproj",
+  "projectFilePath": "D:\\DevOps\\projects\\my\\contact-app\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
