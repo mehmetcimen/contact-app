@@ -14,14 +14,23 @@ namespace API.Controllers
 
         private readonly IMapper _mapper;
         private readonly IService<Contact> _service;
+        private readonly IContactService _contactService;
 
-        public ContactsController(IMapper mapper, IService<Contact> service)
+        public ContactsController(IMapper mapper, IService<Contact> service, IContactService contactService)
         {
             _mapper = mapper;
             _service = service;
+            _contactService = contactService;
         }
 
-        
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetContactWithContactInformation()
+        {
+            return CreateActionResult(await _contactService.GetContactWithContactInformation());
+        }
+
+
         [HttpGet]
         public async Task<IActionResult> All()
         {

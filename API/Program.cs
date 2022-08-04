@@ -24,6 +24,14 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 builder.Services.AddAutoMapper(typeof(MapContactProfile));
 
+
+builder.Services.AddScoped<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<IContactService, ContactService>();
+
+ 
+
+
+
 var connectionString = builder.Configuration.GetConnectionString("ContactDb");
 
 builder.Services.AddDbContext<AppDbContext>(options =>

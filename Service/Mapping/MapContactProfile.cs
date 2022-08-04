@@ -15,7 +15,7 @@ namespace Service.Mapping
         {
             CreateMap<Contact,ContactCreateDto>().ReverseMap();
             CreateMap<ContactInformation, ContactInformationDto>().ReverseMap();
-
+            CreateMap<Contact, ContactWithContactInformationDto>();
 
 
         }
