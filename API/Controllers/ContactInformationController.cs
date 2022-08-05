@@ -33,7 +33,7 @@ namespace API.Controllers
 
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetById(Guid id)
         {
             var contact = await _service.GetByIdAsync(id);
             var contactDto = _mapper.Map<ContactDto>(contact);
@@ -57,7 +57,7 @@ namespace API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Remove(int id)
+        public async Task<IActionResult> Remove(Guid id)
         {
             var contact = await _service.GetByIdAsync(id);
 

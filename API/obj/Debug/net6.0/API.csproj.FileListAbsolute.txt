@@ -125,3 +125,6 @@ D:\DevOps\MyProjects\my\contact-app\API\obj\Debug\net6.0\refint\API.dll
 D:\DevOps\MyProjects\my\contact-app\API\obj\Debug\net6.0\API.pdb
 D:\DevOps\MyProjects\my\contact-app\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 D:\DevOps\MyProjects\my\contact-app\API\obj\Debug\net6.0\ref\API.dll
+D:\DevOps\projects\my\contact-app\API\bin\Debug\net6.0\FluentValidation.dll
+D:\DevOps\projects\my\contact-app\API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\DevOps\projects\my\contact-app\API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
