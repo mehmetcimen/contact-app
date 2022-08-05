@@ -21,6 +21,7 @@ namespace Service.Services
             _contactRepository = contactRepository;
         }
 
+       
         public async Task<ResponseDto<List<ContactWithContactInformationDto>>> GetContactWithContactInformation()
         {
             var contacts = await _contactRepository.GetContactWithContactInformation();

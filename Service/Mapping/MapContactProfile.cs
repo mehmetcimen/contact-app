@@ -13,10 +13,15 @@ namespace Service.Mapping
     {
         public MapContactProfile()
         {
+
+
             CreateMap<Contact,ContactCreateDto>().ReverseMap();
-            CreateMap<ContactInformation, ContactInformationDto>().ReverseMap();
+            CreateMap<Contact, ContactUpdateDto>().ReverseMap();
+
+            CreateMap<Contact, ContactDto>().ReverseMap();
             CreateMap<Contact, ContactWithContactInformationDto>();
 
+        
 
         }
     }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DevOps\\MyProjects\\my\\contact-app\\API\\API.csproj": {}
+    "D:\\DevOps\\projects\\my\\contact-app\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\DevOps\\MyProjects\\my\\contact-app\\API\\API.csproj": {
+    "D:\\DevOps\\projects\\my\\contact-app\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevOps\\MyProjects\\my\\contact-app\\API\\API.csproj",
+        "projectUniqueName": "D:\\DevOps\\projects\\my\\contact-app\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\mehmetcimen\\.nuget\\packages\\",
-        "outputPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\API\\obj\\",
+        "projectPath": "D:\\DevOps\\projects\\my\\contact-app\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\mehmetcimentr\\.nuget\\packages\\",
+        "outputPath": "D:\\DevOps\\projects\\my\\contact-app\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mehmetcimen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mehmetcimentr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\DevOps\\MyProjects\\my\\contact-app\\Service\\Service.csproj": {
-                "projectPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Service\\Service.csproj"
+              "D:\\DevOps\\projects\\my\\contact-app\\Service\\Service.csproj": {
+                "projectPath": "D:\\DevOps\\projects\\my\\contact-app\\Service\\Service.csproj"
               }
             }
           }
@@ -73,21 +73,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DevOps\\MyProjects\\my\\contact-app\\Core\\Core.csproj": {
+    "D:\\DevOps\\projects\\my\\contact-app\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevOps\\MyProjects\\my\\contact-app\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\DevOps\\projects\\my\\contact-app\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\mehmetcimen\\.nuget\\packages\\",
-        "outputPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Core\\obj\\",
+        "projectPath": "D:\\DevOps\\projects\\my\\contact-app\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\mehmetcimentr\\.nuget\\packages\\",
+        "outputPath": "D:\\DevOps\\projects\\my\\contact-app\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mehmetcimen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mehmetcimentr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -127,21 +127,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DevOps\\MyProjects\\my\\contact-app\\Repository\\Repository.csproj": {
+    "D:\\DevOps\\projects\\my\\contact-app\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevOps\\MyProjects\\my\\contact-app\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\DevOps\\projects\\my\\contact-app\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\mehmetcimen\\.nuget\\packages\\",
-        "outputPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Repository\\obj\\",
+        "projectPath": "D:\\DevOps\\projects\\my\\contact-app\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\mehmetcimentr\\.nuget\\packages\\",
+        "outputPath": "D:\\DevOps\\projects\\my\\contact-app\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mehmetcimen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mehmetcimentr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,8 +155,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\DevOps\\MyProjects\\my\\contact-app\\Core\\Core.csproj": {
-                "projectPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Core\\Core.csproj"
+              "D:\\DevOps\\projects\\my\\contact-app\\Core\\Core.csproj": {
+                "projectPath": "D:\\DevOps\\projects\\my\\contact-app\\Core\\Core.csproj"
               }
             }
           }
@@ -201,21 +201,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DevOps\\MyProjects\\my\\contact-app\\Service\\Service.csproj": {
+    "D:\\DevOps\\projects\\my\\contact-app\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevOps\\MyProjects\\my\\contact-app\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\DevOps\\projects\\my\\contact-app\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\mehmetcimen\\.nuget\\packages\\",
-        "outputPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Service\\obj\\",
+        "projectPath": "D:\\DevOps\\projects\\my\\contact-app\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\mehmetcimentr\\.nuget\\packages\\",
+        "outputPath": "D:\\DevOps\\projects\\my\\contact-app\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mehmetcimen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mehmetcimentr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -229,8 +229,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\DevOps\\MyProjects\\my\\contact-app\\Repository\\Repository.csproj": {
-                "projectPath": "D:\\DevOps\\MyProjects\\my\\contact-app\\Repository\\Repository.csproj"
+              "D:\\DevOps\\projects\\my\\contact-app\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\DevOps\\projects\\my\\contact-app\\Repository\\Repository.csproj"
               }
             }
           }
@@ -248,6 +248,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.1.2, )"
             }
           },
           "imports": [
@@ -265,7 +269,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -28,8 +28,9 @@ builder.Services.AddAutoMapper(typeof(MapContactProfile));
 builder.Services.AddScoped<IContactRepository, ContactRepository>();
 builder.Services.AddScoped<IContactService, ContactService>();
 
- 
 
+builder.Services.AddScoped<IContactInformationRepository, ContactInformationRepository>();
+builder.Services.AddScoped<IContactInformationService, ContactInformationService>();
 
 
 var connectionString = builder.Configuration.GetConnectionString("ContactDb");
@@ -41,7 +42,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         option.MigrationsAssembly(Assembly.GetAssembly(typeof(AppDbContext)).GetName().Name);
     });
 });
-
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 
 var app = builder.Build();

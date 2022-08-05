@@ -8,8 +8,8 @@ namespace Core.Services
     {
         Task<ResponseDto<List<ContactWithContactInformationDto>>> GetContactWithContactInformation();
 
-        Task AddContactDetail(ContactInformationCreateDto contactInformation);
+      
 
-
+      
     }
 }

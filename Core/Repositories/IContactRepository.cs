@@ -11,8 +11,12 @@ namespace Core.Repositories
     public interface IContactRepository:IGenericRepository<Contact>
     {
 
+
         Task<List<Contact>> GetContactWithContactInformation();
 
-        Task AddContactDetail(ContactInformationCreateDto contactInformation);
+       
+        
+   
+
     }
 }

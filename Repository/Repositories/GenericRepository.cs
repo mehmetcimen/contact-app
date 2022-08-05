@@ -36,7 +36,7 @@ namespace Repository.Repositories
 
         public IQueryable<T> GetAll()
         {
-            return _dbSet.AsNoTracking().AsQueryable();  //Note:: AsNoTracking: memory'e almaz verileri
+            return _dbSet.AsNoTracking().AsQueryable();  
         }
 
         public async Task<T> GetByIdAsync(int id)
@@ -46,7 +46,7 @@ namespace Repository.Repositories
 
         public void Remove(T entity)
         {
-            //_context.Entry(entity).State = EntityState.Deleted;  diğer kullanım şekli
+           
 
             _dbSet.Remove(entity);
         }

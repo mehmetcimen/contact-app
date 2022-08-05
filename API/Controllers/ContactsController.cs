@@ -55,17 +55,18 @@ namespace API.Controllers
             return CreateActionResult(ResponseDto<ContactCreateDto>.Success(201, contactsDto));
         }
 
-        // DELETE api/contact/5
+
+        
         [HttpPut]
         public async Task<IActionResult> Update(ContactUpdateDto contactDto)
         {
-             await _contactService.UpdateAsync(_mapper.Map<Contact>(contactDto));
+            await _contactService.UpdateAsync(_mapper.Map<Contact>(contactDto));
 
             return CreateActionResult(ResponseDto<NoContentDto>.Success(204));
         }
 
 
-        // DELETE api/contact/5
+      
         [HttpDelete("{id}")]
         public async Task<IActionResult> Remove(int id)
         {
