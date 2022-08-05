@@ -1,4 +1,5 @@
-﻿using Core.Models;
+﻿using Core.Dto;
+using Core.Models;
 using Core.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -13,6 +14,16 @@ namespace Repository.Repositories
     {
         public ContactRepository(AppDbContext context) : base(context)
         {
+
+        }
+
+        public async Task AddContactDetail(ContactInformationCreateDto contactInformation)
+        {
+            var contact = _context.Contacts.Where(i => i.Id == contactInformation.ContactId);
+
+            var Contact = "";
+            //_context.ContactInformations.AddAsync()
+
 
         }
 

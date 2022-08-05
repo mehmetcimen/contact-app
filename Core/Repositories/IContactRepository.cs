@@ -1,4 +1,5 @@
-﻿using Core.Models;
+﻿using Core.Dto;
+using Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,6 @@ namespace Core.Repositories
 
         Task<List<Contact>> GetContactWithContactInformation();
 
-
+        Task AddContactDetail(ContactInformationCreateDto contactInformation);
     }
 }

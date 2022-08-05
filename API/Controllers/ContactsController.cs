@@ -13,13 +13,11 @@ namespace API.Controllers
     {
 
         private readonly IMapper _mapper;
-        private readonly IService<Contact> _service;
         private readonly IContactService _contactService;
 
         public ContactsController(IMapper mapper, IService<Contact> service, IContactService contactService)
         {
             _mapper = mapper;
-            _service = service;
             _contactService = contactService;
         }
 
@@ -34,7 +32,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<IActionResult> All()
         {
-            var contact = await _service.GetAllAsync();
+            var contact = await _contactService.GetAllAsync();
             var contactDto = _mapper.Map<List<ContactDto>>(contact.ToList());
 
             return CreateActionResult(ResponseDto<List<ContactDto>>.Success(200, contactDto));
@@ -44,7 +42,7 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var contact = await _service.GetByIdAsync(id);
+            var contact = await _contactService.GetByIdAsync(id);
             var contactDto = _mapper.Map<ContactDto>(contact);
             return CreateActionResult(ResponseDto<ContactDto>.Success(200, contactDto));
         }
@@ -52,15 +50,16 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> Save(ContactCreateDto contactDto)
         {
-            var contact = await _service.AddAsync(_mapper.Map<Contact>(contactDto));
+            var contact = await _contactService.AddAsync(_mapper.Map<Contact>(contactDto));
             var contactsDto = _mapper.Map<ContactCreateDto>(contact);
             return CreateActionResult(ResponseDto<ContactCreateDto>.Success(201, contactsDto));
         }
 
+        // DELETE api/contact/5
         [HttpPut]
         public async Task<IActionResult> Update(ContactUpdateDto contactDto)
         {
-             await _service.UpdateAsync(_mapper.Map<Contact>(contactDto));
+             await _contactService.UpdateAsync(_mapper.Map<Contact>(contactDto));
 
             return CreateActionResult(ResponseDto<NoContentDto>.Success(204));
         }
@@ -70,9 +69,9 @@ namespace API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Remove(int id)
         {
-            var contact = await _service.GetByIdAsync(id);
+            var contact = await _contactService.GetByIdAsync(id);
 
-            await _service.RemoveAsync(contact);
+            await _contactService.RemoveAsync(contact);
 
             return CreateActionResult(ResponseDto<NoContentDto>.Success(204));
         }

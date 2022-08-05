@@ -7,5 +7,9 @@ namespace Core.Services
     public interface IContactService:IService<Contact>
     {
         Task<ResponseDto<List<ContactWithContactInformationDto>>> GetContactWithContactInformation();
+
+        Task AddContactDetail(ContactInformationCreateDto contactInformation);
+
+
     }
 }
