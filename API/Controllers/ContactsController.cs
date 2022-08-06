@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using API.Filters;
+using AutoMapper;
 using Core.Custom;
 using Core.Dto;
 using Core.Models;
@@ -15,12 +16,14 @@ namespace API.Controllers
         private readonly IMapper _mapper;
         private readonly IContactService _contactService;
 
+
         public ContactsController(IMapper mapper, IService<Contact> service, IContactService contactService)
         {
             _mapper = mapper;
             _contactService = contactService;
         }
 
+    
 
         [HttpGet("[action]")]
         public async Task<IActionResult> GetContactWithContactInformation()

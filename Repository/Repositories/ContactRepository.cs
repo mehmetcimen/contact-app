@@ -21,7 +21,10 @@ namespace Repository.Repositories
     
         public async Task<List<Contact>> GetContactWithContactInformation()
         {
-            return await _context.Contacts.Include(x => x.ContactInformations).ToListAsync();
+            var aa = await _context.Contacts.Include(x => x.ContactInformations).ToListAsync();
+           
+            
+            return aa;
         }
 
 

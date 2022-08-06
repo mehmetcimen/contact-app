@@ -13,7 +13,7 @@ namespace Core.Dto
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Company { get; set; }
-        public List<ContactInformationDto> Detail { get; set; }
+        public ICollection<ContactInformationDto> ContactInformations { get; set; }
 
 
     }

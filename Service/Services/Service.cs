@@ -2,6 +2,7 @@
 using Core.Services;
 using Core.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
+using Service.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,7 +49,13 @@ namespace Service.Services
 
         public async Task<T> GetByIdAsync(Guid id)
         {
-          return await _repository.GetByIdAsync(id);
+            var res = await _repository.GetByIdAsync(id);
+            if (res == null)
+            {
+                throw new NotFoundExcepiton("not found");
+            }
+
+            return res;
 
         }
 

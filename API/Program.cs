@@ -1,19 +1,34 @@
+using API.Filters;
+using API.Middlewares;
 using Core.Repositories;
 using Core.Services;
 using Core.UnitOfWorks;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 using Repository.Repositories;
 using Repository.UnitOfWork;
 using Service.Mapping;
 using Service.Services;
+using Service.Validations;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+options.Filters.Add(new ValidateFilterAttribute()))
+    .AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<ContactCreateDtoValidator>());
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+
+});
+
+builder.Services.AddHealthChecks();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -44,7 +59,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -54,10 +68,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseHealthChecks("/api/health",new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions()
+{
+    ResponseWriter = async (context,report) =>
+    {
+        await context.Response.WriteAsync("OK");
+    }
+});
+
+
+
 app.UseHttpsRedirection();
-
+app.UseCustomException();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
