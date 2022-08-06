@@ -11,7 +11,6 @@ Web uygulama mimarilerine dayanan n-katmanlı bir mimaridir.
 <li> AutoMapper </li>
 <li> FluentValidation  </li>
 <li> XUnit (Unit tests) </li>
-<li> XUnit (Unit tests) </li>
 </ul>
 
 
